@@ -1,0 +1,35 @@
+{
+  "name": "wechat-mall",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env-shell SERVER=http://localhost:3003 npm run server",
+    "server": "node bin/www",
+    "api": "apidoc -i routes/ -o public/api/ && apidoc -i routes/ -o docs/"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "express-jwt": "^6.1.1",
+    "ger": "^0.0.99",
+    "ger_mysql_esm": "^0.0.3",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "pug": "^3.0.2",
+    "sharp": "^0.30.3",
+    "uuid": "^8.3.2",
+    "cross-env": "^7.0.3"
+  },
+  "apidoc": {
+    "name": "商城API文档",
+    "title": "商城API文档",
+    "description": "admin--用于后台管理系统，user--用于小程序"
+  }
+}
